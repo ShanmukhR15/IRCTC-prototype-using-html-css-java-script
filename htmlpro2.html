@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Railway Reservation System</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="style2.css">
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" type="text/css" href="style3.css">
+     <style>
+    .mySlides {display:none;}
+    .foo{
+      background-color: white;
+    }
+    </style>
+  </head>
+  <body background="vv.jpg"><fieldset>
+
+      <h1 align="center" style="color:blue; font-size:35px; font-family: comic sans ms;">Railway Reservation System</h1>
+
+    <div id="a">  <ul>
+        <li><a class="home" href="htmlpro2.html"><i class="fa fa-home"></i>Home</a></li>
+        <li><a class="meals" href="meals.html" target="_blank"><i class="icon-food"></i>Meals</a></li>
+        <li><a class="holi" href="holi.html" target="_blank">Holiday Package</a></li>
+        <li><a class="serv" href="#">Service at station</a></li>
+        <li><a class="cont" href="abt.html" target="_blank"><i class="fa fa-user"></i>Contact Us</a></li>
+      </ul>
+
+      <div id="b"><form action="/action_page.php" method="get" >
+
+
+        <fieldset>
+        <h2 style="font-size:25px; color:#EF0088">
+          <legend>
+        <b><pre>
+    Book
+      Your
+    Ticket
+      Here
+       </b></legend>
+     </pre></h2>
+      <input type="text" name="From" placeholder="FROM*" size="29"  >
+      <p align="center" >&darr; &uarr;</p>
+      <input type="text" name="To" placeholder="To*" align="center" size="29"><br><br><br>
+        <input type="date" style="color:Violet;"  > <br><br><br>
+
+          <select >
+            <option value="All classes">All Classes</option>
+            <option value="First AC">First AC</option>
+            <option value="Second AC">Second AC</option>
+            <option value="Third AC">Third AC</option>
+            <option value="General">General</option>
+          </select>
+          <br><br><br>
+          <button type="submit"><a href="sub.html">Find Trains </a></button> </form>
+      </div>
+      <div id="c">
+        <img class="mySlides" src="b.jpg" style="width:100%" >
+        <img class="mySlides" src="s.jpg" style="width:100%" >
+        <img class="mySlides" src="ss.jpg" style="width:100% ">
+        <img class="mySlides" src="a.jpg" style="width:100% ">
+      </div>
+      <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+  <!-- <h1 align="center">    Holidays</h1> -->
+  <br>
+  <div id="d">
+    <h2 align="center">Tourist Travels</h2>
+    <img src="d.jpg" >
+    AP EXPRESS
+    <p>Train number 22416 is a train running between New Delhi and Vishakhapatnam. New Delhi is located in the state of Delhi and Vishakhapatnam is located in the state of Andhra Pradesh.The two cities are located at a distance of 2103kms.</p>
+    <a href="https://www.the-maharajas.com/">For more info&rarr;</a>
+  </div>
+  <div id="e">
+    <h2 align="center">International Packages</h2>
+    <img src="c.jpg" >
+      <p>Best deals in International Holiday packages, handpicked by IRCTC, for Thailand, Dubai,  China, Macau, Bhutan, Nepal, Europe, USA, Australia etc. The packages are inclusive of sightseeing, meals, visa charges and overseas medical insurance to give you a hassle-free and memorable experience.</p>
+     <a href="https://www.irctctourism.com/">For more info&rarr;</a>
+  </div>
+  <div id="f">
+      <h2 align="center">National Packages</h2>
+      <img src="v.jpeg">
+      <p>Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi or the leisure traveller wanting to relish the Blue mountains of North East,  Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands, IRCTC has it all. Discover India through IRCTC!
+</p>
+<a href="https://www.irctctourism.com/">For more info&rarr;</a>
+
+  </div>
+    </div>
+
+
+
+  </fieldset>
+
+  </body>
+</html>
